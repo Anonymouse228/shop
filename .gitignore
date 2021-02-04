@@ -1,0 +1,8 @@
+.env.dev
+.env.prod
+.env.prod.db
+.idea
+env
+staticfiles
+mediafiles
+data
