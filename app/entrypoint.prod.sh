@@ -1,5 +1,6 @@
 #!/bin/sh
 
+# Only writing about postgres stage during launch db
 if [ "$DATABASE" = "postgres" ]
 then
     echo "Waiting for postgres..."

@@ -1,8 +1,19 @@
+# environment files
 .env.dev
+.env.db
 .env.prod
 .env.prod.db
-.idea
+
+# project virtual environment
 env
+
+# statics
 staticfiles
 mediafiles
+
+# db files
 data
+
+# other files
+.idea
+errors.txt

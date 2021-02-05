@@ -17,12 +17,13 @@ RUN pip install --upgrade pip
 COPY ./requirements.txt .
 RUN pip install -r requirements.txt
 
+# TODO: Solve the problem with .sh files and permission at start in Windows
 # copy entrypoint.sh
-COPY ./entrypoint.sh .
+# COPY ./entrypoint.sh .
 # RUN chmod +x entrypoint.sh
+# run entrypoint.sh
+# ENTRYPOINT ["/usr/src/app/entrypoint.sh"]
 
 # copy project
 COPY . .
 
-# run entrypoint.sh
-# ENTRYPOINT ["entrypoint.sh"]

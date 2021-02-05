@@ -1,5 +1,6 @@
 #!/bin/sh
 
+# Writing about postgres stage during launch db
 if [ "$DATABASE" = "postgres" ]
 then
     echo "Waiting for postgres..."
@@ -11,6 +12,7 @@ then
     echo "PostgreSQL started"
 fi
 
+# Cleaning up the database and creating migrations every start of project
 python manage.py flush --no-input
 python manage.py migrate
 
