@@ -11,9 +11,6 @@ env
 staticfiles
 mediafiles
 
-# db files
-data
-
 # other files
 .idea
 errors.txt
