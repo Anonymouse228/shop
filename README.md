@@ -3,7 +3,7 @@
 - Docker
 - Gunicorn with Nginx
 
-![hello_page](hello_page.png)
+![hello_page](development/readme/hello_page.png)
 
 ### 📖 Instalation 
 
