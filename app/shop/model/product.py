@@ -8,7 +8,5 @@ class Product(BaseModel):
     description = models.TextField()
     visible = models.BooleanField(default=True)
     amount = models.IntegerField()
-
-    # TODO: Foreign key to category and manufacturer tables
-    # category =
-    # manufacturer =
+    _category = models.ForeignKey('Category', on_delete=models.CASCADE)
+    _manufacturer = models.ForeignKey('Manufacturer', on_delete=models.CASCADE)

@@ -6,7 +6,5 @@ class Review(BaseModel):
     rating = models.IntegerField()
     title = models.CharField(max_length=255)
     description = models.TextField()
-
-    # TODO: Foreign key to product and user tables
-    # product =
-    # user =
+    _product = models.ForeignKey('Product', on_delete=models.CASCADE)
+    _user = models.ForeignKey('User', on_delete=models.CASCADE)
