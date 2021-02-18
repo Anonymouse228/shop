@@ -1,5 +1,5 @@
 from django.db import models
-from shop.model.base_model import BaseModel
+from shop.models.base_model import BaseModel
 
 
 class Category(BaseModel):
